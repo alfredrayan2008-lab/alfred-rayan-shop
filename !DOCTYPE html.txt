@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALFRED RAYAN - Boutique de Luxe</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        ALFRED RAYAN
+    </div>
+
+    <nav>
+        <a href="#">Accueil</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Bienvenue Chez ALFRED RAYAN</h1>
+    <p>Produits Premium • Livraison Rapide • Qualité Garantie</p>
+</section>
+
+<section class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="">
+<h3>Nike Air Max</h3>
+<p>15 000 FCFA</p>
+<button onclick="commander('Nike Air Max - 15 000 FCFA')">Commander</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="">
+<h3>Montre Luxe</h3>
+<p>25 000 FCFA</p>
+<button onclick="commander('Montre Luxe - 25 000 FCFA')">Commander</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="">
+<h3>iPhone</h3>
+<p>350 000 FCFA</p>
+<button onclick="commander('iPhone - 350 000 FCFA')">Commander</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="">
+<h3>T-Shirt Premium</h3>
+<p>12 000 FCFA</p>
+<button onclick="commander('T-Shirt Premium - 12 000 FCFA')">Commander</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="">
+<h3>Casque Bluetooth</h3>
+<p>18 000 FCFA</p>
+<button onclick="commander('Casque Bluetooth - 18 000 FCFA')">Commander</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" alt="">
+<h3>Smart Watch</h3>
+<p>35 000 FCFA</p>
+<button onclick="commander('Smart Watch - 35 000 FCFA')">Commander</button>
+</div>
+
+<DIV class="card">
+    <img src="c:\Users\ALFRED RAYAN\OneDrive\Desktop\Nouveau dossier\1778819847071.jpg" alt="">
+    <h3>godasse</h3>
+    <p>7000 FCFA</p>
+    <button onclick="commander('godasse -7000')">COMMANDER</button>
+</DIV>
+
+<DIV class="card">
+    <img src="c:\Users\ALFRED RAYAN\OneDrive\Desktop\Nouveau dossier\1778819882015.jpg" alt="">
+    <h3>godasse</h3>
+    <p>7500 FCFA</p>
+    <button onclick="commander ('godasse - 7500 FCFA')"> COMMANDER</button>
+</DIV>
+<div class="card">
+<img src="c:\Users\ALFRED RAYAN\OneDrive\Desktop\Nouveau dossier\1778819955275.jpg" alt="">
+<h3>godasse</h3>
+<p>10000 FCFA</p>
+<button onclick="commander ('godasse - 10000 FCFA')">commander</button>
+</div>
+
+
+</section>
+
+<footer>
+<h2>ALFRED RAYAN</h2>
+<p>WhatsApp : 652726390</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+function commander(produit) {
+
+    let numero = "237652726390";
+
+    let message = "Bonjour ALFRED RAYAN, je souhaite commander : " + produit;
+
+    let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
